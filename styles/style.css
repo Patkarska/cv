@@ -1,196 +1,187 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
-    margin: 0;
-	padding: 0;
-    background: #f9f9f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
- @media screen {
+@media screen {
+  body {
+    background-color: #f9f9f9;
+    letter-spacing: -0.25px;
+  }
 
-	body {
-		background-color: #f9f9f9;
-		letter-spacing: -0.25px;
-	}
-	
-	.page {
-		background-color: white;
-		margin: 0 auto;
-		width: 21cm;
-	}
+  .page {
+    background-color: white;
+    margin: 0 auto;
+    width: 21cm;
+  }
 
-	.page > div {
-		padding: 1.5cm 2cm;
-	}
+  .page > div {
+    padding: 1.5cm 2cm;
+  }
+}
 
-} 
+@page {
+  margin: 1.5cm 2cm;
+}
 
- @page {
-	margin: 1.5cm 2cm;
-}  
-
-h5{
-    font-weight: 600;
-    color: #3590d2;
-    font-size: 10pt;
+h5 {
+  font-weight: 600;
+  color: #3590d2;
+  font-size: 10pt;
 }
 
 h4 {
-    color: #333;
-    font-weight: 600;
-    margin: 5px 0;
-    font-size: 12pt;
+  color: #333;
+  font-weight: 600;
+  margin: 5px 0;
+  font-size: 12pt;
 }
 
 h6 {
-    color: #666;
-    font-weight: 300;
-    font-size: 11pt;
+  color: #666;
+  font-weight: 300;
+  font-size: 11pt;
 }
 
 .container {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    padding: 30px 50px 30px 50px;
-    background: #fff;
-    box-shadow: 0 50px 75px rgba(0,0,0,0.1);
-} 
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  padding: 30px 50px 30px 50px;
+  background: #fff;
+  box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
+}
 
 .container .top {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding-bottom: 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-bottom: 0;
 }
 
 .container .top .imgBx {
-    position: relative;
-    width: 100%;
-    min-width: 256.72px;
-    display: flex;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  min-width: 256.72px;
+  display: flex;
+  align-items: center;
 }
 
 .container .top .imgBx .box {
-    position: relative;
-    width: 70%;
-    min-width: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    aspect-ratio: 1;
+  position: relative;
+  width: 70%;
+  min-width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  aspect-ratio: 1;
 }
 
 .container .top .imgBx .box img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container .top .profileText {
-    position: relative;
-    display: grid;
-    align-items: center;
+  position: relative;
+  display: grid;
+  align-items: center;
 }
 
 .container .top .profileText h3 {
-    font-size: 3em;
-    letter-spacing: 0.1em;
-    line-height: 1.2em;
-    font-weight: 600;
-    color: #333;
-    top: -10px;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  font-weight: 600;
+  color: #333;
+  top: -10px;
 }
 
 .container .contentBox {
-    position: relative;
-    min-height: 500px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  position: relative;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .container .contentBox h3 {
-    border-left: 4px solid #ff8bff;
-    font-size: 14pt;
-    padding-left: 10px;
-    line-height: 1em;
-    font-weight: 600;
-    color: #333;
-    letter-spacing: 0.1.em;
-    margin-bottom: 20px;
-    margin-top: 40px;
+  border-left: 4px solid #ff8bff;
+  font-size: 14pt;
+  padding-left: 10px;
+  line-height: 1em;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 0.1.em;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .container .contentBox .leftSide ul li {
-    font-size: 9pt;
-    margin: 8px 0;
-    line-height: 1.4em;
-    color: #333;
+  font-size: 9pt;
+  margin: 8px 0;
+  line-height: 1.4em;
+  color: #333;
 }
 
 .container .contentBox ul.contact li {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .container .contentBox ul.contact li ion-icon {
-    font-size: 1.2em;
-    margin-right: 10px;
-    color: #3590d2;
+  font-size: 1.2em;
+  margin-right: 10px;
+  color: #3590d2;
 }
 
-.container .contentBox ul.contact li a, a:hover, a:visited, a:active {
-    text-decoration: none;
-    color: #333;
+.container .contentBox ul.contact li a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #333;
 }
 
 .container .contentBox .box ul.education {
-    padding-left: 0px;
+  padding-left: 0px;
 }
 
-.container .contentBox ul.education li{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin: 25px 0;
-    font-size: 11pt;
+.container .contentBox ul.education li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0;
+  font-size: 11pt;
 }
 
-.container .contentBox ul.tools {
-    padding-left: 20px;
+.container .contentBox ul.tools,
+ul.programming-languages,
+ul.soft-skills,
+ul.certificates,
+ul.languages {
+  padding-left: 20px;
 }
 
-.container .contentBox ul.tools li{
-    margin: 8px 0;
-    color: #333;
-} 
-
-.container .contentBox ul.skills {
-    padding-left: 20px;
+.container .contentBox ul.tools li {
+  margin: 8px 0;
+  color: #333;
 }
-
-.container .contentBox ul.courses {
-    padding-left: 20px;
-}
-
-.container .contentBox ul.courses li{
-    margin: 8px 0;
-    color: #333;
-} 
 
 /* .container .contentBox ul.interest {
     position: relative;
@@ -199,77 +190,77 @@ h6 {
 } */
 
 .container .contentBox ul.interest li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 10px 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 5px;
 }
 
 .container .contentBox ul.interest li .icon {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    /* background: #3590d2;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  /* background: #3590d2;
     color: #fff; */
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container .contentBox ul.interest li ion-icon {
-    font-size: 1.2em;
-    margin-right: 10px;
-    color: #3590d2;
+  font-size: 1.2em;
+  margin-right: 10px;
+  color: #3590d2;
 }
 
 .leftSide {
-    padding-right: 40px;
+  padding-right: 40px;
 }
 
-.container .contentBox .rightSide .about{
-        font-size: 9pt;
+.container .contentBox .rightSide .about {
+  font-size: 9pt;
 }
 
-.container .contentBox .rightSide  ul {
-    padding-left: 20px;
+.container .contentBox .rightSide ul {
+  padding-left: 20px;
 }
 
-.container .contentBox .rightSide ul li{
-    margin: 8px 0;
-    line-height: 1.4em;
-    color: #333;
-} 
+.container .contentBox .rightSide ul li {
+  margin: 8px 0;
+  line-height: 1.4em;
+  color: #333;
+}
 
 .about .box {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .about .box .year_company {
-    min-width: 150px;
+  min-width: 150px;
 }
 
 .about .box .year_company h5 {
-    color: #333;
-    font-weight: 600;
+  color: #333;
+  font-weight: 600;
 }
 
 .about .box .year_company h5:nth-child(1) {
-    color: #3590d2;
+  color: #3590d2;
 }
 
 .about .box .text h4 {
-    color: #3590d2;
-    font-size: 12pt;
-    margin: 0;
+  color: #3590d2;
+  font-size: 12pt;
+  margin: 0;
 }
 
 .about .box .text {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .footer p {
-    font-size: 6pt;
-    text-align: center;
-    padding: 80px 10px 0 10px;
+  font-size: 6pt;
+  text-align: center;
+  padding: 170px 10px 0 10px;
 }
